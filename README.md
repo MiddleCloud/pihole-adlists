@@ -23,18 +23,24 @@ docker build -t adlists-convert . -f Dockerfile
 docker run --rm  -v $(pwd)/:/app --name adlists-convert adlists-convert
 ```
 
+---
+
+
 ## Information
 
 The script will generate an output file named adlists.list that combines all lists from urls.list. This file can be imported into Pi-hole using the raw link from Github.
 
 To import the list into Pi-hole, use the following link:
 
-Adlist - https://raw.githubusercontent.com/MiddleCloud/pihole-adlists/main/adlists.list
+Adlist - https://github.com/MiddleCloud/pihole-adlists/raw/main/adlists.list
+
+----
+
+## Source lists
 
 
-### Source lists
+### The script uses the following Pi-hole lists as source:
 
-#### The script uses the following Pi-hole lists as source:
 
 * http://sysctl.org/cameleon/hosts
 * https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
